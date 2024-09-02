@@ -1,0 +1,15 @@
+function convrt(n){
+    a = ['a','e','o','u','i'];
+    let count = 0;
+    for(let i = 0;i<n.length;i++){
+        for(let j = 0;j<a.length;j++){
+            if (n[i] === a[j]){
+                count = count + 1;
+            } 
+        }
+    }
+    return count;
+}
+
+let st = 'darshainaok'
+console.log(convrt(st));
