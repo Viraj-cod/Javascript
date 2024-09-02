@@ -1,0 +1,6 @@
+let arr = [85,97,44,37,76,60];
+let add = 0;
+for(let i = 0;i<arr.length;i++){
+    add = add + arr[i]    
+}
+console.log(add/arr.length);
