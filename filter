@@ -1,0 +1,5 @@
+let marks = [90,76,65,43,99,91,90,67];
+let new_array = marks.filter((i)=>{
+        return i>90;
+});
+console.log(new_array);
