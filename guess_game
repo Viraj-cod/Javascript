@@ -1,0 +1,7 @@
+let goal = '9'
+let inp = prompt('Enter a number:')
+while(inp != goal){
+    inp = prompt("Try again! Enter the number:")
+}
+console.log('Congratulations you won!')
+
