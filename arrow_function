@@ -1,0 +1,11 @@
+const con = (n) =>{
+    let count = 0;
+    for(let i of n){
+        if(i === 'a'||i === 'e'||i === 'i'||i == 'o'||i === 'u'){
+            count += 1;
+        }
+    }
+    return count;
+}
+
+console.log(con('viraj'))
