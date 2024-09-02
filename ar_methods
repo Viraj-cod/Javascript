@@ -1,0 +1,10 @@
+/*array methods*/
+let ar = ['Bloomberg','Microsofft','Uber','Google','IBM','Netflix']
+ar.shift()
+console.log(ar)
+ar.splice(1,1,'ola')
+console.log(ar)
+ar.push('amazon')
+console.log(ar)
+ar.pop()
+console.lon(ar)
