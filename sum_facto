@@ -1,0 +1,17 @@
+let inp = prompt("Enter a number:");
+let new_array = []
+for(let i =1;i<=inp;i++){
+    new_array[i-1] = i;
+}
+
+let add = new_array.reduce((i,j)=>{
+    return i + j;
+})
+
+let fact = new_array.reduce((i,j)=>{
+    return i * j;
+})
+
+console.log(new_array);
+console.log(add);
+console.log(fact);
