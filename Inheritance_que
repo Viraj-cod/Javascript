@@ -1,0 +1,29 @@
+class user{
+    constructor(email,name){
+        this.email = email;
+        this.name = name;
+    }
+
+    viewData(){
+        console.log(`Person name is ${this.name} and email is ${this.email}`);
+    }
+}
+
+class Admin extends user{
+    constructor(){
+        super();
+        this.email = 'sir@gmail.com';
+        this.name = 'sk sir';
+    }
+    editdata(){
+        
+    }
+
+
+}
+let newonj = new user('vkgmail.com','viraj');
+let newonj1 = new user('kkgmail.com','kshama');
+newonj.viewData();
+let ad = new Admin();
+ad.viewData();
+
