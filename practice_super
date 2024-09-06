@@ -1,0 +1,27 @@
+class user{
+    constructor(email,name){
+        this.email = email;
+        this.name = name;
+    }
+
+    viewData(){
+        console.log(`Person name is ${this.name} and email is ${this.email}`);
+    }
+}
+
+class Admin extends user{
+    constructor(email,name){
+        super(email,name);
+        this.email = email;
+        this.name = name;
+    }
+    viewData(){
+        console.log(`mansach nav is ${this.name} ani sampark sadhan is ${this.email}`);    
+    }
+}
+let newonj = new user('vkgmail.com','viraj');
+let newonj1 = new user('kkgmail.com','kshama');
+newonj.viewData();
+let ad = new Admin('kamal@gail.com','kamalraj');
+ad.viewData();
+
