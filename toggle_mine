@@ -1,0 +1,62 @@
+//html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="myElement">Hover over me!</div>
+  <button onclick="toggleClass()">Toggle Highlight</button>
+
+  <script>
+    const element = document.getElementById('myElement');
+
+    function toggleClass() {
+      element.classList.toggle('highlight');
+    }
+  </script>
+</body>
+</html>
+
+//css
+.see{
+    text-align: center;
+    margin-top: 18rem;
+}
+
+#bt{
+    color: white;
+    background-color: black;
+    align-self: center;
+}
+
+//js
+
+let nw = document.createElement('p');
+nw.textContent = 'Hello javascript';
+
+let div = document.querySelector('.see');
+let bod = document.querySelector('body');
+bod.style.backgroundColor = 'skyblue';
+div.prepend(nw);
+
+let button = document.querySelector('#bt');
+mode = 'Light'
+const func = () =>{
+    if(mode === 'Light'){
+        mode = 'Dark';
+        bod.style.backgroundColor = 'black';
+        nw.style.color = 'white';
+    }else if(mode === 'Dark'){
+        mode = 'Light';
+        bod.style.backgroundColor = 'white';
+        nw.style.color = 'black';
+    }
+}
+button.addEventListener('click',func);
+
+
