@@ -1,0 +1,23 @@
+const marks = [98,78,99,94,65,43,97,99,45];
+const res = marks.filter((m)=>m>90);
+console.log(res)
+
+let inp = prompt("Enter a number:");
+let arr = [];
+temp = 0
+for(i=1;i<=inp;i++){
+    arr[temp] = i;
+    temp++;
+};
+
+let add = 0;
+for(n of arr){
+    add = add + n
+}
+console.log(add);
+
+let mul = 1;
+for(n of arr){
+    mul = mul * n;
+}
+console.log(mul);
